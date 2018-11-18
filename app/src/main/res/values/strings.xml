@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Movie App</string>
+    <string name="popular">popular</string>
+    <string name="top_rated">top rated</string>
+    <string name="dialog_loading_message">Loading…</string>
+    <string name="fail_response">There is an error occurred</string>
+    <string name="error_string">error</string>
+    <string name="ok">OK</string>
+    <string name="favourite">favourite</string>
+    <string name="trailer_label">trailers:</string>
+    <string name="reviews_label">Reviews:</string>
+</resources>

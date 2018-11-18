@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".activity.DetailsActivity">
+
+        <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/title_layout_padding">
+
+            <TextView
+                android:id="@+id/tv_movie_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgv_movie_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_layout"
+            android:padding="@dimen/imgv_movie_details_padding" />
+
+        <TextView
+            android:id="@+id/tv_movie_release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_layout"
+            android:layout_toEndOf="@+id/imgv_movie_details"
+            android:layout_toRightOf="@id/imgv_movie_details"
+            android:paddingTop="@dimen/release_date_tv_padding_top" />
+
+        <TextView
+            android:id="@+id/tv_movie_vote_avg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_movie_release_date"
+            android:layout_toEndOf="@id/imgv_movie_details"
+            android:layout_toRightOf="@id/imgv_movie_details" />
+
+        <ImageButton
+            android:id="@+id/tgb_fav"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_movie_vote_avg"
+            android:layout_toEndOf="@id/imgv_movie_details"
+            android:layout_toRightOf="@id/imgv_movie_details" />
+
+        <TextView
+            android:id="@+id/tv_movie_plot_synopsis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgv_movie_details"
+            android:layout_margin="@dimen/desc_tv_margin" />
+
+        <View
+            android:id="@+id/view_trailers_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/trailer_divider_height"
+            android:layout_below="@id/tv_movie_plot_synopsis"
+            android:layout_margin="@dimen/trailer_divider_margin"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/tv_trailer_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_trailers_divider"
+            android:layout_margin="@dimen/trailer_label_margin"
+            android:text="@string/trailer_label"
+            tools:text="trailers" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_movie_trailers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_trailer_label" />
+
+        <View
+            android:id="@+id/view_reviewers_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/trailer_divider_height"
+            android:layout_below="@id/recycler_view_movie_trailers"
+            android:layout_margin="@dimen/trailer_divider_margin"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/tv_review_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_reviewers_divider"
+            android:layout_margin="@dimen/trailer_label_margin"
+            android:text="@string/reviews_label"
+            tools:text="Reviews" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_movie_reviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_review_label"
+            android:layout_marginTop="@dimen/reviews_recycler_top_margin" />
+    </RelativeLayout>
+
+</ScrollView>

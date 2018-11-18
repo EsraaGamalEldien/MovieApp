@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fail_response_layout_margin">20dp</dimen>
+    <dimen name="title_layout_padding">15dp</dimen>
+    <dimen name="imgv_movie_details_padding">20dp</dimen>
+    <dimen name="release_date_tv_padding">20dp</dimen>
+    <dimen name="release_date_tv_padding_top">20dp</dimen>
+    <dimen name="desc_tv_margin">10dp</dimen>
+    <dimen name="trailer_divider_height">2dp</dimen>
+    <dimen name="trailer_divider_margin">5dp</dimen>
+    <dimen name="trailer_label_margin">5dp</dimen>
+    <dimen name="reviews_recycler_top_margin">5dp</dimen>
+    <dimen name="reviews_margin">10dp</dimen>
+    <dimen name="reviews_padding">5dp</dimen>
+</resources>
